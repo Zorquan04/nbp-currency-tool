@@ -24,6 +24,9 @@
         }
       },
       "NbpCurrencyTool.Infrastructure/1.0.0": {
+        "dependencies": {
+          "NbpCurrencyTool.Core": "1.0.0"
+        },
         "runtime": {
           "NbpCurrencyTool.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",

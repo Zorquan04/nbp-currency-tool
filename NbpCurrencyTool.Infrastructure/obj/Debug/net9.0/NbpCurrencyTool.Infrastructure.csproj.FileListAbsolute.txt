@@ -10,3 +10,7 @@ C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastruct
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.pdb
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\ref\NbpCurrencyTool.Infrastructure.dll
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.sourcelink.json
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\bin\Debug\net9.0\NbpCurrencyTool.Core.dll
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\bin\Debug\net9.0\NbpCurrencyTool.Core.pdb
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurre.148A9CCE.Up2Date

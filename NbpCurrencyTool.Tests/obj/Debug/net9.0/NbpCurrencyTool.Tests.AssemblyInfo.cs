@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NbpCurrencyTool.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9005979d59057a128f26d76dd8c05fb43ce3a89")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00208670a8a4d04c1ac1293cd172a2c9300a4a6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("NbpCurrencyTool.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NbpCurrencyTool.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
