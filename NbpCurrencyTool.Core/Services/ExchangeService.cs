@@ -5,22 +5,16 @@ using NbpCurrencyTool.Core.Utils;
 namespace NbpCurrencyTool.Core.Services
 {
     // Główna logika konwersji; SRP: tylko konwersje i dostęp do kursów
-    public class ExchangeService
+    public class ExchangeService(IExchangeRateProvider provider, RatesNotifier notifier)
     {
-        private readonly IExchangeRateProvider _provider;
-        private readonly RatesNotifier _notifier;
+        private readonly IExchangeRateProvider _provider = provider ?? throw new ArgumentNullException(nameof(provider));
+        private readonly RatesNotifier _notifier = notifier ?? throw new ArgumentNullException(nameof(notifier));
         private List<ExchangeRate> _rates = new();
 
         public bool HasRates => _rates.Any();
 
-        public ExchangeService(IExchangeRateProvider provider, RatesNotifier notifier)
-        {
-            _provider = provider ?? throw new ArgumentNullException(nameof(provider));
-            _notifier = notifier ?? throw new ArgumentNullException(nameof(notifier));
-        }
-
         // Aktualizuj kursy (wywoływane przez App / State)
-        public async System.Threading.Tasks.Task UpdateRatesAsync()
+        public async Task UpdateRatesAsync()
         {
             var fetched = (await _provider.GetLatestRatesAsync()).ToList();
             if (!fetched.Any()) throw new InvalidOperationException("Pobrano pustą listę kursów.");

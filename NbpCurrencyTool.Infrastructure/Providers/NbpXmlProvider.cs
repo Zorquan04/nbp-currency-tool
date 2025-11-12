@@ -2,24 +2,19 @@
 using NbpCurrencyTool.Core.Interfaces;
 using NbpCurrencyTool.Core.Models;
 
-namespace NbpCurrencyTool.Providers
+namespace NbpCurrencyTool.Infrastructure.Providers
 {
-    public class NbpXmlProvider : IExchangeRateProvider
+    public class NbpXmlProvider(string url) : IExchangeRateProvider
     {
-        private readonly string _url;
-        private static readonly HttpClient _http = new HttpClient();
-
-        public NbpXmlProvider(string url)
-        {
-            _url = url ?? throw new ArgumentNullException(nameof(url));
-        }
+        private readonly string _url = url ?? throw new ArgumentNullException(nameof(url));
+        private static readonly HttpClient Http = new HttpClient();
 
         public async Task<IEnumerable<ExchangeRate>> GetLatestRatesAsync()
         {
             string xml;
             try
             {
-                xml = await _http.GetStringAsync(_url);
+                xml = await Http.GetStringAsync(_url);
             }
             catch (Exception ex)
             {
@@ -35,10 +30,10 @@ namespace NbpCurrencyTool.Providers
                 var pozycje = doc.Descendants("pozycja");
                 foreach (var p in pozycje)
                 {
-                    var name = (string)p.Element("nazwa_waluty")! ?? "";
-                    var code = (string)p.Element("kod_waluty")! ?? "";
-                    var unitRaw = (string)p.Element("przelicznik")! ?? "1";
-                    var rateRaw = (string)p.Element("kurs_sredni")! ?? "0";
+                    var name = (string)p.Element("nazwa_waluty")!;
+                    var code = (string)p.Element("kod_waluty")!;
+                    var unitRaw = (string)p.Element("przelicznik")!;
+                    var rateRaw = (string)p.Element("kurs_sredni")!;
 
                     if (!int.TryParse(unitRaw, out var unit)) unit = 1;
                     

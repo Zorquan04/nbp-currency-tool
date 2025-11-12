@@ -14,7 +14,7 @@ namespace NbpCurrencyTool.Core.Utils
             _observers.Add(observer);
         }
 
-        public void Unsubscribe(IRatesObserver observer)
+        public void Unsubscribe(IRatesObserver? observer)
         {
             if (observer == null) return;
             _observers.Remove(observer);
@@ -22,9 +22,11 @@ namespace NbpCurrencyTool.Core.Utils
 
         public void Notify(IEnumerable<ExchangeRate> rates)
         {
+            var cachedRates = rates.ToList();
+            
             foreach (var o in _observers)
             {
-                try { o.OnRatesUpdated(rates); } catch { /* ignoruj błędy obserwatorów */ }
+                try { o.OnRatesUpdated(cachedRates); } catch { /* ignoruj błędy obserwatorów */ }
             }
         }
     }

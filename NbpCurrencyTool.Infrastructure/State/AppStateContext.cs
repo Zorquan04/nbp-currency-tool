@@ -3,16 +3,10 @@ using NbpCurrencyTool.Core.Services;
 
 namespace NbpCurrencyTool.Infrastructure.State
 {
-    public class AppStateContext
+    public class AppStateContext(ExchangeService exchangeService)
     {
-        private IAppState _state;
-        public ExchangeService ExchangeService { get; }
-
-        public AppStateContext(ExchangeService exchangeService)
-        {
-            ExchangeService = exchangeService ?? throw new ArgumentNullException(nameof(exchangeService));
-            _state = new IdleState(this);
-        }
+        private IAppState _state = new IdleState();
+        public ExchangeService ExchangeService { get; } = exchangeService ?? throw new ArgumentNullException(nameof(exchangeService));
 
         public async Task SetStateAsync(IAppState newState)
         {
