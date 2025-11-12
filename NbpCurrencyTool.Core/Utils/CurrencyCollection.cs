@@ -1,6 +1,20 @@
-﻿namespace NbpCurrencyTool.Core.Utils;
+﻿using System.Collections;
+using NbpCurrencyTool.Core.Models;
 
-public class CurrencyCollection
+namespace NbpCurrencyTool.Core.Utils
 {
-    
+    // Iterator: umożliwia iterowanie po dostępnych walutach
+    public class CurrencyCollection : IEnumerable<ExchangeRate>
+    {
+        private readonly List<ExchangeRate> _rates;
+
+        public CurrencyCollection(IEnumerable<ExchangeRate> rates)
+        {
+            _rates = rates?.ToList() ?? new List<ExchangeRate>();
+        }
+
+        public IEnumerator<ExchangeRate> GetEnumerator() => _rates.GetEnumerator();
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+    }
 }

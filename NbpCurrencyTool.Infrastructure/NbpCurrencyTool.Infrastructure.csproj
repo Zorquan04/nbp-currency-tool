@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\NbpCurrencyTool.Core\NbpCurrencyTool.Core.csproj" />
+    </ItemGroup>
+
 </Project>

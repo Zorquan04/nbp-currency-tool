@@ -162,7 +162,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {
+                "projectPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

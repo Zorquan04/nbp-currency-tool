@@ -1,0 +1,31 @@
+﻿using NbpCurrencyTool.Core.Models;
+using NbpCurrencyTool.Core.Interfaces;
+
+namespace NbpCurrencyTool.Core.Utils
+{
+    // Prosty notifier (Observable)
+    public class RatesNotifier
+    {
+        private readonly List<IRatesObserver> _observers = new();
+
+        public void Subscribe(IRatesObserver observer)
+        {
+            if (observer == null) throw new ArgumentNullException(nameof(observer));
+            _observers.Add(observer);
+        }
+
+        public void Unsubscribe(IRatesObserver observer)
+        {
+            if (observer == null) return;
+            _observers.Remove(observer);
+        }
+
+        public void Notify(IEnumerable<ExchangeRate> rates)
+        {
+            foreach (var o in _observers)
+            {
+                try { o.OnRatesUpdated(rates); } catch { /* ignoruj błędy obserwatorów */ }
+            }
+        }
+    }
+}
