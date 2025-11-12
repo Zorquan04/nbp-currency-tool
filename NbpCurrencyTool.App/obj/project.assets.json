@@ -1,0 +1,119 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "NbpCurrencyTool.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/NbpCurrencyTool.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NbpCurrencyTool.Core.dll": {}
+        }
+      },
+      "NbpCurrencyTool.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/NbpCurrencyTool.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NbpCurrencyTool.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NbpCurrencyTool.Core/1.0.0": {
+      "type": "project",
+      "path": "../NbpCurrencyTool.Core/NbpCurrencyTool.Core.csproj",
+      "msbuildProject": "../NbpCurrencyTool.Core/NbpCurrencyTool.Core.csproj"
+    },
+    "NbpCurrencyTool.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../NbpCurrencyTool.Infrastructure/NbpCurrencyTool.Infrastructure.csproj",
+      "msbuildProject": "../NbpCurrencyTool.Infrastructure/NbpCurrencyTool.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "NbpCurrencyTool.Core >= 1.0.0",
+      "NbpCurrencyTool.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kacpe\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.App\\NbpCurrencyTool.App.csproj",
+      "projectName": "NbpCurrencyTool.App",
+      "projectPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.App\\NbpCurrencyTool.App.csproj",
+      "packagesPath": "C:\\Users\\kacpe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.App\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\kacpe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {
+              "projectPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj"
+            },
+            "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Users\\kacpe\\.dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

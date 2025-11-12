@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbpCurrencyTool.App", "NbpCurrencyTool.App\NbpCurrencyTool.App.csproj", "{FA72A481-8D0A-4A5E-BE03-56C9EEBC78CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbpCurrencyTool.Core", "NbpCurrencyTool.Core\NbpCurrencyTool.Core.csproj", "{5F838000-EBCF-4B29-A44C-84F609225853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbpCurrencyTool.Infrastructure", "NbpCurrencyTool.Infrastructure\NbpCurrencyTool.Infrastructure.csproj", "{BD64AA96-BEFA-46C0-8903-65F5623A52E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NbpCurrencyTool.Tests", "NbpCurrencyTool.Tests\NbpCurrencyTool.Tests.csproj", "{8C00D930-BF35-4658-A242-89B1435BA056}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA72A481-8D0A-4A5E-BE03-56C9EEBC78CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA72A481-8D0A-4A5E-BE03-56C9EEBC78CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA72A481-8D0A-4A5E-BE03-56C9EEBC78CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA72A481-8D0A-4A5E-BE03-56C9EEBC78CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F838000-EBCF-4B29-A44C-84F609225853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F838000-EBCF-4B29-A44C-84F609225853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F838000-EBCF-4B29-A44C-84F609225853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F838000-EBCF-4B29-A44C-84F609225853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD64AA96-BEFA-46C0-8903-65F5623A52E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD64AA96-BEFA-46C0-8903-65F5623A52E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD64AA96-BEFA-46C0-8903-65F5623A52E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD64AA96-BEFA-46C0-8903-65F5623A52E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C00D930-BF35-4658-A242-89B1435BA056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C00D930-BF35-4658-A242-89B1435BA056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C00D930-BF35-4658-A242-89B1435BA056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C00D930-BF35-4658-A242-89B1435BA056}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

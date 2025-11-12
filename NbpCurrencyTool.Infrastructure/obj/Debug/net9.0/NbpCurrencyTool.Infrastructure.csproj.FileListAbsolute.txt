@@ -1,0 +1,11 @@
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\bin\Debug\net9.0\NbpCurrencyTool.Infrastructure.deps.json
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\bin\Debug\net9.0\NbpCurrencyTool.Infrastructure.dll
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\bin\Debug\net9.0\NbpCurrencyTool.Infrastructure.pdb
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.AssemblyInfo.cs
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.dll
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\refint\NbpCurrencyTool.Infrastructure.dll
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.pdb
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\ref\NbpCurrencyTool.Infrastructure.dll
