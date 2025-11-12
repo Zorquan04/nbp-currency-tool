@@ -6,7 +6,7 @@ namespace NbpCurrencyTool.Infrastructure.State
     {
         public Task EnterAsync()
         {
-            Console.WriteLine("[State] Ready - kursy dostępne.");
+            Console.WriteLine("[State] Gotowe - kursy dostępne.");
             return Task.CompletedTask;
         }
     }

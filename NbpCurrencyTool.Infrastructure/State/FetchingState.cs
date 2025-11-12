@@ -6,7 +6,7 @@ namespace NbpCurrencyTool.Infrastructure.State
     {
         public async Task EnterAsync()
         {
-            Console.WriteLine("[State] Fetching latest rates...");
+            Console.WriteLine("[State] Pobieranie najnowszych kursów...");
             try
             {
                 await ctx.ExchangeService.UpdateRatesAsync();

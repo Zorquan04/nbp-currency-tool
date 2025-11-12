@@ -9,7 +9,7 @@ namespace NbpCurrencyTool.Infrastructure.Observer
         public void OnRatesUpdated(IEnumerable<ExchangeRate>? rates)
         {
             var count = rates?.Count() ?? 0;
-            Console.WriteLine($"[Observer] Zaktualizowano kursy: {count} pozycji.");
+            Console.WriteLine($"[Observer] Zaktualizowano kursy: {count} pozycje.");
         }
     }
 }

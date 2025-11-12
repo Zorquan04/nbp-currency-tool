@@ -7,14 +7,24 @@ namespace NbpCurrencyTool.Infrastructure.Providers
     public class NbpXmlProvider(string url) : IExchangeRateProvider
     {
         private readonly string _url = url ?? throw new ArgumentNullException(nameof(url));
-        private static readonly HttpClient Http = new HttpClient();
+        private static readonly HttpClient Http;
 
+        static NbpXmlProvider()
+        {
+            Http = new HttpClient();
+            Http.DefaultRequestHeaders.Add("User-Agent", "NbpCurrencyTool/1.0 (by KacperGumulak)");
+            Http.DefaultRequestHeaders.Add("Accept", "application/xml");
+            Http.DefaultRequestHeaders.Add("Accept-Language", "pl-PL");
+        }
+        
         public async Task<IEnumerable<ExchangeRate>> GetLatestRatesAsync()
         {
             string xml;
             try
             {
-                xml = await Http.GetStringAsync(_url);
+                var response = await Http.GetAsync(_url);
+                response.EnsureSuccessStatusCode();
+                xml = await response.Content.ReadAsStringAsync();
             }
             catch (Exception ex)
             {
@@ -27,25 +37,24 @@ namespace NbpCurrencyTool.Infrastructure.Providers
                 // Struktura NBP: <tabela_kursow> ... <pozycja> ... <nazwa_waluty>, <przelicznik>, <kod_waluty>, <kurs_sredni>
                 var list = new List<ExchangeRate>();
 
-                var pozycje = doc.Descendants("pozycja");
-                foreach (var p in pozycje)
-                {
-                    var name = (string)p.Element("nazwa_waluty")!;
-                    var code = (string)p.Element("kod_waluty")!;
-                    var unitRaw = (string)p.Element("przelicznik")!;
-                    var rateRaw = (string)p.Element("kurs_sredni")!;
+                var ratesNodes = doc.Descendants("Rate"); // zamiast "pozycja"
 
-                    if (!int.TryParse(unitRaw, out var unit)) unit = 1;
-                    
+                foreach (var r in ratesNodes)
+                {
+                    var name = (string?)r.Element("Currency") ?? "unknown";
+                    var code = (string?)r.Element("Code") ?? "UNK";
+                    var rateRaw = (string?)r.Element("Mid") ?? "0";
+
                     rateRaw = rateRaw.Replace(',', '.');
 
                     if (!decimal.TryParse(rateRaw, System.Globalization.NumberStyles.Any,
-                        System.Globalization.CultureInfo.InvariantCulture, out var rate))
+                            System.Globalization.CultureInfo.InvariantCulture, out var rate))
                     {
                         continue;
                     }
 
-                    list.Add(new ExchangeRate(name, code.ToUpperInvariant(), rate, unit));
+                    // Wszystkie kursy w tabeli A mają przelicznik 1
+                    list.Add(new ExchangeRate(name, code.ToUpperInvariant(), rate, 1));
                 }
 
                 // Dołącz PLN jako kurs 1 dla 1 jednostki — ułatwia konwersję

@@ -13,7 +13,7 @@ namespace NbpCurrencyTool.App
             Console.WriteLine("NBP Currency Tool - wersja studencka\n");
 
             // Tworzymy komponenty (zależności)
-            var provider = new NbpXmlProvider("https://www.nbp.pl/kursy/xml/lasta.xml");
+            var provider = new NbpXmlProvider("https://api.nbp.pl/api/exchangerates/tables/A?format=xml");
             var notifier = new RatesNotifier();
             var exchangeService = new ExchangeService(provider, notifier);
             var app = new AppStateContext(exchangeService);
@@ -58,7 +58,7 @@ namespace NbpCurrencyTool.App
                 }
             }
 
-            Console.WriteLine("Koniec. Trzymaj się!");
+            Console.WriteLine("Program zakończył działanie!");
         }
 
         static void DoConversion(ExchangeService exchangeService)
