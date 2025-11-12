@@ -1,6 +1,9 @@
-﻿namespace NbpCurrencyTool.Core.Interfaces;
+﻿using NbpCurrencyTool.Core.Models;
 
-public class IRatesObserver
+namespace NbpCurrencyTool.Core.Interfaces
 {
-    
+    public interface IRatesObserver
+    {
+        void OnRatesUpdated(IEnumerable<ExchangeRate> rates);
+    }
 }

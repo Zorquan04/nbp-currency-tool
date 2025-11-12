@@ -101,3 +101,4 @@ C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Tests\obj\D
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Tests\obj\Debug\net9.0\NbpCurrencyTool.Tests.pdb
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Tests\obj\Debug\net9.0\NbpCurrencyTool.Tests.genruntimeconfig.cache
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Tests\obj\Debug\net9.0\ref\NbpCurrencyTool.Tests.dll
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Tests\obj\Debug\net9.0\NbpCurrencyTool.Tests.sourcelink.json

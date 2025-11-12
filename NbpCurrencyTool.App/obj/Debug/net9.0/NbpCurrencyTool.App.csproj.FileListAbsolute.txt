@@ -18,3 +18,4 @@ C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.App\obj\Deb
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.App\obj\Debug\net9.0\NbpCurrencyTool.App.pdb
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.App\obj\Debug\net9.0\NbpCurrencyTool.App.genruntimeconfig.cache
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.App\obj\Debug\net9.0\ref\NbpCurrencyTool.App.dll
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.App\obj\Debug\net9.0\NbpCurrencyTool.App.sourcelink.json

@@ -1,6 +1,7 @@
-﻿namespace NbpCurrencyTool.Core.Interfaces;
-
-public class IAppState
+﻿namespace NbpCurrencyTool.Core.Interfaces
 {
-    
+    public interface IAppState
+    {
+        Task EnterAsync();
+    }
 }

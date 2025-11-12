@@ -9,3 +9,4 @@ C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Core\obj\De
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Core\obj\Debug\net9.0\refint\NbpCurrencyTool.Core.dll
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.pdb
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Core\obj\Debug\net9.0\ref\NbpCurrencyTool.Core.dll
+C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.sourcelink.json

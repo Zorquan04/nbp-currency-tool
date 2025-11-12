@@ -1,6 +1,9 @@
-﻿namespace NbpCurrencyTool.Core.Interfaces;
+﻿using NbpCurrencyTool.Core.Models;
 
-public class IExchangeRateProvider
+namespace NbpCurrencyTool.Core.Interfaces
 {
-    
+    public interface IExchangeRateProvider
+    {
+        Task<IEnumerable<ExchangeRate>> GetLatestRatesAsync();
+    }
 }
