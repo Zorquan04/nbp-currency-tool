@@ -14,6 +14,9 @@ A virtual currency exchange office in C# (Console App) that downloads current ex
 - NUnit 3 – unit tests
 - HttpClient + LINQ to XML for data retrieval and parsing
 
+## UML Diagram
+![NbpCurrencyToolUML](assets/nbp_currency_tool_uml.png)
+
 ## Launch
 1. Clone the repository:
 ```bash
