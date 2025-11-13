@@ -52,11 +52,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.App\\NbpCurrencyTool.App.csproj",
+      "projectUniqueName": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.App\\NbpCurrencyTool.App.csproj",
       "projectName": "NbpCurrencyTool.App",
-      "projectPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.App\\NbpCurrencyTool.App.csproj",
+      "projectPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.App\\NbpCurrencyTool.App.csproj",
       "packagesPath": "C:\\Users\\kacpe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.App\\obj\\",
+      "outputPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,11 +75,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {
-              "projectPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj"
+            "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {
+              "projectPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj"
             },
-            "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj"
+            "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj"
             }
           }
         }

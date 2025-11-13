@@ -70,6 +70,8 @@ namespace NbpCurrencyTool.App
             Console.Write("Kwota (np. 123.45): ");
             var raw = Console.ReadLine() ?? "";
 
+            raw = raw.Replace(',', '.'); // pozwala użytkownikowi wpisać zarówno przecinek jak i kropkę
+            
             if (!decimal.TryParse(raw, System.Globalization.NumberStyles.Any,
                     System.Globalization.CultureInfo.InvariantCulture, out var amount))
             {

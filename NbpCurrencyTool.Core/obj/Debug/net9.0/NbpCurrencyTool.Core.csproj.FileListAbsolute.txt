@@ -10,3 +10,15 @@ C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Core\obj\De
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.pdb
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Core\obj\Debug\net9.0\ref\NbpCurrencyTool.Core.dll
 C:\Users\kacpe\RiderProjects\NbpCurrencyToolSolution\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.sourcelink.json
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\bin\Debug\net9.0\NbpCurrencyTool.Core.deps.json
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\bin\Debug\net9.0\NbpCurrencyTool.Core.dll
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\bin\Debug\net9.0\NbpCurrencyTool.Core.pdb
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.AssemblyInfoInputs.cache
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.AssemblyInfo.cs
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.csproj.CoreCompileInputs.cache
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.sourcelink.json
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.dll
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\refint\NbpCurrencyTool.Core.dll
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.pdb
+C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\ref\NbpCurrencyTool.Core.dll

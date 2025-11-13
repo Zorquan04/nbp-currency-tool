@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {}
+    "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {
+    "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj",
+        "projectUniqueName": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj",
         "projectName": "NbpCurrencyTool.Core",
-        "projectPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj",
+        "projectPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj",
         "packagesPath": "C:\\Users\\kacpe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Core\\obj\\",
+        "outputPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

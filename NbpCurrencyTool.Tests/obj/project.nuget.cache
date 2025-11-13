@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qaL2qs/XPdI=",
+  "dgSpecHash": "pkTSB/uq0HU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kacpe\\RiderProjects\\NbpCurrencyToolSolution\\NbpCurrencyTool.Tests\\NbpCurrencyTool.Tests.csproj",
+  "projectFilePath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Tests\\NbpCurrencyTool.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kacpe\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\kacpe\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",
