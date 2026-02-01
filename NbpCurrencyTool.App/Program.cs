@@ -10,23 +10,23 @@ namespace NbpCurrencyTool.App
     {
         private static async Task Main()
         {
-            Console.WriteLine("NBP Currency Tool - wersja studencka\n");
+            Console.WriteLine("NBP Currency Tool - student version\n");
 
-            // Tworzymy komponenty (zależności)
+            // We create components (dependencies)
             var provider = new NbpXmlProvider("https://api.nbp.pl/api/exchangerates/tables/A?format=xml");
             var notifier = new RatesNotifier();
             var exchangeService = new ExchangeService(provider, notifier);
             var app = new AppStateContext(exchangeService);
 
-            notifier.Subscribe(new ConsoleRatesObserver()); // demo observer (powiadamia w konsoli)
+            notifier.Subscribe(new ConsoleRatesObserver()); // demo observer (notifies in console)
 
-            // autoupdate na start
+            // autoupdate on start
             await app.SetStateAsync(new FetchingState(app));
 
-            // prosta pętla CLI
+            // simple CLI loop
             while (true)
             {
-                Console.WriteLine("\nKomendy: fetch | list | conv | exit");
+                Console.WriteLine("\nCommands: fetch | list | conv | exit");
                 Console.Write("> ");
                 var cmd = Console.ReadLine()?.Trim().ToLowerInvariant();
 
@@ -42,40 +42,39 @@ namespace NbpCurrencyTool.App
                         if (exchangeService.HasRates)
                             exchangeService.PrintAvailableCurrencies();
                         else
-                            Console.WriteLine("Brak kursów — użyj fetch.");
+                            Console.WriteLine("No courses - use fetch.");
                         break;
                     case "conv":
                         if (!exchangeService.HasRates)
                         {
-                            Console.WriteLine("Brak kursów — najpierw pobierz (fetch).");
+                            Console.WriteLine("No courses - fetch first.");
                             break;
                         }
                         DoConversion(exchangeService);
                         break;
                     default:
-                        Console.WriteLine("Nieznana komenda.");
+                        Console.WriteLine("Unknown command.");
                         break;
                 }
             }
 
-            Console.WriteLine("Program zakończył działanie!");
+            Console.WriteLine("The program has finished. See you soon!");
         }
 
         static void DoConversion(ExchangeService exchangeService)
         {
-            Console.Write("Waluta źródłowa (kod, np. USD): ");
+            Console.Write("Source Currency (code, e.g. USD): ");
             var from = (Console.ReadLine() ?? "").Trim().ToUpperInvariant();
-            Console.Write("Waluta docelowa (kod, np. EUR): ");
+            Console.Write("Target currency (code, e.g. EUR): ");
             var to = (Console.ReadLine() ?? "").Trim().ToUpperInvariant();
-            Console.Write("Kwota (np. 123.45): ");
+            Console.Write("Amount (e.g. 123.45): ");
             var raw = Console.ReadLine() ?? "";
 
-            raw = raw.Replace(',', '.'); // pozwala użytkownikowi wpisać zarówno przecinek jak i kropkę
-            
-            if (!decimal.TryParse(raw, System.Globalization.NumberStyles.Any,
-                    System.Globalization.CultureInfo.InvariantCulture, out var amount))
+            raw = raw.Replace(',', '.'); // allows the user to enter both a comma and a period
+
+            if (!decimal.TryParse(raw, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out var amount))
             {
-                Console.WriteLine("Niepoprawny format kwoty.");
+                Console.WriteLine("Incorrect amount format.");
                 return;
             }
 
@@ -86,11 +85,11 @@ namespace NbpCurrencyTool.App
             }
             catch (ArgumentException ex)
             {
-                Console.WriteLine($"Błąd: {ex.Message}");
+                Console.WriteLine($"Error: {ex.Message}");
             }
             catch (InvalidOperationException ex)
             {
-                Console.WriteLine($"Błąd operacji: {ex.Message}");
+                Console.WriteLine($"Operation error: {ex.Message}");
             }
         }
     }

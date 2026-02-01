@@ -22,3 +22,15 @@ C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\ne
 C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\refint\NbpCurrencyTool.Core.dll
 C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.pdb
 C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\ref\NbpCurrencyTool.Core.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\bin\Debug\net9.0\NbpCurrencyTool.Core.deps.json
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\bin\Debug\net9.0\NbpCurrencyTool.Core.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\bin\Debug\net9.0\NbpCurrencyTool.Core.pdb
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.AssemblyInfoInputs.cache
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.AssemblyInfo.cs
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.csproj.CoreCompileInputs.cache
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.sourcelink.json
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\refint\NbpCurrencyTool.Core.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\NbpCurrencyTool.Core.pdb
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Core\obj\Debug\net9.0\ref\NbpCurrencyTool.Core.dll

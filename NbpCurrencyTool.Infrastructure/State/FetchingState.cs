@@ -6,17 +6,17 @@ namespace NbpCurrencyTool.Infrastructure.State
     {
         public async Task EnterAsync()
         {
-            Console.WriteLine("[State] Pobieranie najnowszych kursów...");
+            Console.WriteLine("[State] Downloading latest rates...");
             try
             {
                 await ctx.ExchangeService.UpdateRatesAsync();
-                Console.WriteLine("Pobrano kursy pomyślnie.");
-                // Po udanym pobraniu ustawiamy stan Idle/Ready
+                Console.WriteLine("Rates downloaded successfully.");
+                // After successful download, we set the Idle/Ready state
                 await ctx.SetStateAsync(new ReadyState());
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Błąd pobierania: {ex.Message}");
+                Console.WriteLine($"Download error: {ex.Message}");
                 await ctx.SetStateAsync(new ErrorState(ex));
             }
         }

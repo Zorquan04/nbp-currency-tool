@@ -4,20 +4,21 @@ using NbpCurrencyTool.Core.Utils;
 
 namespace NbpCurrencyTool.Core.Services
 {
-    // Główna logika konwersji; SRP: tylko konwersje i dostęp do kursów
+    // Main conversion logic; SRP: conversions and rate access only
     public class ExchangeService(IExchangeRateProvider provider, RatesNotifier notifier)
     {
         private readonly IExchangeRateProvider _provider = provider ?? throw new ArgumentNullException(nameof(provider));
         private readonly RatesNotifier _notifier = notifier ?? throw new ArgumentNullException(nameof(notifier));
         private List<ExchangeRate> _rates = new();
 
+        public IReadOnlyList<ExchangeRate> Rates => _rates;
         public bool HasRates => _rates.Any();
 
-        // Aktualizuj kursy (wywoływane przez App / State)
+        // Update Rates (triggered by App/State)
         public async Task UpdateRatesAsync()
         {
             var fetched = (await _provider.GetLatestRatesAsync()).ToList();
-            if (!fetched.Any()) throw new InvalidOperationException("Pobrano pustą listę kursów.");
+            if (!fetched.Any()) throw new InvalidOperationException("Empty course list downloaded.");
             _rates = fetched;
             _notifier.Notify(_rates);
         }
@@ -25,7 +26,7 @@ namespace NbpCurrencyTool.Core.Services
         public decimal Convert(string fromCode, string toCode, decimal amount)
         {
             if (string.IsNullOrWhiteSpace(fromCode) || string.IsNullOrWhiteSpace(toCode))
-                throw new ArgumentException("Kody walut nie mogą być puste.");
+                throw new ArgumentException("Currency codes cannot be empty.");
 
             fromCode = fromCode.ToUpperInvariant();
             toCode = toCode.ToUpperInvariant();
@@ -33,11 +34,11 @@ namespace NbpCurrencyTool.Core.Services
             var from = _rates.FirstOrDefault(r => r.Code == fromCode);
             var to = _rates.FirstOrDefault(r => r.Code == toCode);
 
-            if (from == null) throw new ArgumentException($"Brak kursu dla waluty źródłowej: {fromCode}");
-            if (to == null) throw new ArgumentException($"Brak kursu dla waluty docelowej: {toCode}");
+            if (from == null) throw new ArgumentException($"No rate for source currency: {fromCode}");
+            if (to == null) throw new ArgumentException($"No rate for target currency: {toCode}");
 
-            // Kursy NBP: podawane są jako kurs średni dla N jednostek (przelicznik)
-            // Aby szybko konwertować: najpierw na PLN, potem na docelową:
+            // NBP rates: are provided as an average rate for N units (converter)
+            // To quickly convert: first to PLN, then to the target currency:
             // valueInPln = amount * (from.Rate / from.Unit)
             // result = valueInPln / (to.Rate / to.Unit)
 
@@ -49,10 +50,10 @@ namespace NbpCurrencyTool.Core.Services
         public void PrintAvailableCurrencies()
         {
             var col = new CurrencyCollection(_rates);
-            Console.WriteLine("Dostępne waluty:");
+            Console.WriteLine("Available currencies:");
             foreach (var c in col)
             {
-                Console.WriteLine($"{c.Code} - {c.Currency} (przelicznik: {c.Unit}, kurs: {c.Rate})");
+                Console.WriteLine($"{c.Code} - {c.Currency} (converter: {c.Unit}, course: {c.Rate})");
             }
         }
     }

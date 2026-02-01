@@ -1,45 +1,72 @@
-# NBP Currency Tool
+# NBP Currency Tool (WPF)
 
-A virtual currency exchange office in C# (Console App) that downloads current exchange rates from the National Bank of Poland website and allows conversions between any currency.
+A desktop currency exchange tool in **C# WPF** that downloads current exchange rates from the National Bank of Poland (NBP) and allows easy conversion between currencies. It includes a simple GUI with a converter and a list of all available rates.
 
 ## Features
-- Downloading exchange rates from the National Bank of Poland (Table A)
-- Conversion between selected currencies
-- Displaying available currencies in the console
-- Handling errors and missing rates
-- Expandable with additional observers (RatesNotifier)
+
+- Download and update exchange rates from NBP (Table A)
+- Convert amounts between any two currencies
+- View all available currencies in a sortable, resizable table
+- Status messages with temporary pop-ups and fade animations
+- Handles decimal input with commas or dots
+- Error handling for network failures
+- Optional code modification – published executable works standalone
 
 ## Technologies
-- .NET 9
-- NUnit 3 – unit tests
-- HttpClient + LINQ to XML for data retrieval and parsing
+
+- **.NET 9 / C#**
+- **WPF** for GUI
+- **MVVM pattern** with `INotifyPropertyChanged`
+- **HttpClient + LINQ to XML** for data retrieval
+- **NUnit 3** for unit tests
+- Publish includes all required DLLs, so Visual Studio is optional for running the app ([see](publish))
+
+## Screenshots
+
+![Screenshot](assets/converter.png)  
+*Converter view with amount input, currency selection, and result display*  
+
+![Screenshot](assets/list.png)  
+*Currency list view with sortable rates table*  
 
 ## UML Diagram
-![NbpCurrencyToolUML](assets/nbp_currency_tool_uml.png)
 
-## Launch
+![Screenshot](assets/nbp_currency_tool_uml.png)  
+
+## Launch (Development)
+
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Zorquan04/nbp-currency-tool.git
 ```
-2. Open the project
 
-3. Make sure the startup project is `App`
+2. Open the WPF project in Visual Studio 2022 or newer
+3. Make sure the startup project is NbpCurrencyTool.Wpf
+4. Run the application → F5 or dotnet run
 
-4. Run the application -> F5 or `dotnet run`
+## Usage
+
+- Converter view: select currencies, type amount, click Calculate → see result
+- List view: displays all available currencies, sortable and resizable
+- Fetch button: updates the rates from NBP
 
 ## Tests
-The unit tests use NUnit3 and include:
-- Downloading exchange rates (mock)
+
+Unit tests include ([see](NbpCurrencyTool.Tests/ExchangeServiceTests.cs)):
+
 - Currency conversion logic
-- Support Incorrect data
+- Mocked exchange rate downloads
+- Error handling with incorrect/missing data
 
-Run using `dotnet test`
+Run tests using:
 
-## Usage example:
+```bash
+dotnet test
+```
 
-Commands available in the console:
-- fetch : get the latest exchange rates
-- list : display available currencies
-- conv : convert the amount between currencies
-- exit : exit the program
+## Notes
+
+- Input supports decimal amounts with commas
+- Status messages appear briefly with fade animation
+- MVVM structure with clear property change notifications and commands

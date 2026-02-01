@@ -1,34 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj": {}
+    "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {
+    "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj",
+        "projectUniqueName": "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj",
         "projectName": "NbpCurrencyTool.Core",
-        "projectPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj",
+        "projectPath": "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj",
         "packagesPath": "C:\\Users\\kacpe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\obj\\",
+        "outputPath": "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\kacpe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net9.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net9.0-windows7.0": {
+            "targetAlias": "net9.0-windows",
             "projectReferences": {}
           }
         },
@@ -45,8 +48,8 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
           "imports": [
             "net461",
             "net462",
@@ -63,38 +66,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\kacpe\\.dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj": {
+    "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj",
+        "projectUniqueName": "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj",
         "projectName": "NbpCurrencyTool.Infrastructure",
-        "projectPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj",
+        "projectPath": "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\NbpCurrencyTool.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\kacpe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\obj\\",
+        "outputPath": "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\kacpe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net9.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net9.0-windows7.0": {
+            "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {
-                "projectPath": "C:\\Users\\kacpe\\RiderProjects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj"
+              "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj": {
+                "projectPath": "D:\\VS 2022\\Projects\\nbp-currency-tool\\NbpCurrencyTool.Core\\NbpCurrencyTool.Core.csproj"
               }
             }
           }
@@ -112,8 +118,8 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
           "imports": [
             "net461",
             "net462",
@@ -130,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\kacpe\\.dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

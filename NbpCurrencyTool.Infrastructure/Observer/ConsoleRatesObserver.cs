@@ -3,13 +3,13 @@ using NbpCurrencyTool.Core.Interfaces;
 
 namespace NbpCurrencyTool.Infrastructure.Observer
 {
-    // Przykładowy obserwator wypisujący info do konsoli
+    // An example observer printing information to the console
     public class ConsoleRatesObserver : IRatesObserver
     {
         public void OnRatesUpdated(IEnumerable<ExchangeRate>? rates)
         {
             var count = rates?.Count() ?? 0;
-            Console.WriteLine($"[Observer] Zaktualizowano kursy: {count} pozycje.");
+            Console.WriteLine($"[Observer] Updated odds: {count} positions.");
         }
     }
 }

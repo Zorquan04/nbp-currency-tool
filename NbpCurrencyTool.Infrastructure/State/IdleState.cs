@@ -6,8 +6,8 @@ namespace NbpCurrencyTool.Infrastructure.State
     {
         public Task EnterAsync()
         {
-            // nic szczególnego
-            Console.WriteLine("[State] Bezczynność");
+            // nothing special
+            Console.WriteLine("[State] Inactivity");
             return Task.CompletedTask;
         }
     }

@@ -40,3 +40,6 @@ C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.App\obj\Debug\net
 C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.App\obj\Debug\net9.0\NbpCurrencyTool.App.pdb
 C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.App\obj\Debug\net9.0\NbpCurrencyTool.App.genruntimeconfig.cache
 C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.App\obj\Debug\net9.0\ref\NbpCurrencyTool.App.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.App\obj\Debug\net9.0\NbpCurrencyTool.App.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.App\obj\Debug\net9.0\refint\NbpCurrencyTool.App.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.App\obj\Debug\net9.0\NbpCurrencyTool.App.pdb

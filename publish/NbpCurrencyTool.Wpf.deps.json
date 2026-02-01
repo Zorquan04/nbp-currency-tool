@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "NbpCurrencyTool.Wpf/1.0.0": {
+        "dependencies": {
+          "NbpCurrencyTool.Core": "1.0.0",
+          "NbpCurrencyTool.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "NbpCurrencyTool.Wpf.dll": {}
+        }
+      },
+      "NbpCurrencyTool.Core/1.0.0": {
+        "runtime": {
+          "NbpCurrencyTool.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "NbpCurrencyTool.Infrastructure/1.0.0": {
+        "dependencies": {
+          "NbpCurrencyTool.Core": "1.0.0"
+        },
+        "runtime": {
+          "NbpCurrencyTool.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NbpCurrencyTool.Wpf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NbpCurrencyTool.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NbpCurrencyTool.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

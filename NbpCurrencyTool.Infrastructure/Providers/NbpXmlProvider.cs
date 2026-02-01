@@ -28,16 +28,16 @@ namespace NbpCurrencyTool.Infrastructure.Providers
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException("Błąd pobierania danych NBP: " + ex.Message, ex);
+                throw new InvalidOperationException("Error downloading NBP data: " + ex.Message, ex);
             }
 
             try
             {
                 var doc = XDocument.Parse(xml);
-                // Struktura NBP: <tabela_kursow> ... <pozycja> ... <nazwa_waluty>, <przelicznik>, <kod_waluty>, <kurs_sredni>
+                // NBP structure: <exchange rate table> ... <item> ... <currency name>, <converter>, <currency_code>, <average exchange rate>
                 var list = new List<ExchangeRate>();
 
-                var ratesNodes = doc.Descendants("Rate"); // zamiast "pozycja"
+                var ratesNodes = doc.Descendants("Rate"); // instead of "position"
 
                 foreach (var r in ratesNodes)
                 {
@@ -47,24 +47,23 @@ namespace NbpCurrencyTool.Infrastructure.Providers
 
                     rateRaw = rateRaw.Replace(',', '.');
 
-                    if (!decimal.TryParse(rateRaw, System.Globalization.NumberStyles.Any,
-                            System.Globalization.CultureInfo.InvariantCulture, out var rate))
+                    if (!decimal.TryParse(rateRaw, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out var rate))
                     {
                         continue;
                     }
 
-                    // Wszystkie kursy w tabeli A mają przelicznik 1
+                    // All odds in table A have a conversion factor of 1
                     list.Add(new ExchangeRate(name, code.ToUpperInvariant(), rate, 1));
                 }
 
-                // Dołącz PLN jako kurs 1 dla 1 jednostki — ułatwia konwersję
+                // Include PLN as a 1 for 1 unit rate - makes conversion easier
                 list.Add(new ExchangeRate("polski złoty", "PLN", 1.0m, 1));
 
                 return list;
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException("Błąd parsowania danych NBP: " + ex.Message, ex);
+                throw new InvalidOperationException("NBP data parsing error: " + ex.Message, ex);
             }
         }
     }

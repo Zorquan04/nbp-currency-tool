@@ -3,7 +3,7 @@ using NbpCurrencyTool.Core.Interfaces;
 
 namespace NbpCurrencyTool.Core.Utils
 {
-    // Prosty notifier (Observable)
+    // Simple notifier (Observable)
     public class RatesNotifier
     {
         private readonly List<IRatesObserver> _observers = new();

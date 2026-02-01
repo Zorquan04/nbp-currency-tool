@@ -23,12 +23,12 @@ namespace NbpCurrencyTool.Tests
         [Test]
         public async Task UpdateRatesAsync_SetsRatesCorrectly()
         {
-            // Przed UpdateRatesAsync lista jest pusta
+            // Before UpdateRatesAsync the list is empty
             Assert.That(_service.HasRates, Is.False);
 
             await _service.UpdateRatesAsync();
 
-            // Po pobraniu powinna być pełna
+            // It should be full after downloading
             Assert.That(_service.HasRates, Is.True);
             Assert.That(_mockProvider.LatestRates.Count, Is.EqualTo(3));
         }
@@ -40,7 +40,7 @@ namespace NbpCurrencyTool.Tests
 
             decimal amount = 100m;
 
-            // kursy: USD 4, EUR 2
+            // rates: USD 4, EUR 2
             decimal result = _service.Convert("USD", "EUR", amount);
 
             // USD->PLN: 100 * 4/1 = 400
@@ -64,7 +64,7 @@ namespace NbpCurrencyTool.Tests
             Assert.Throws<ArgumentException>(() => _service.Convert("USD", "", 10));
         }
 
-        // Mock provider do testów
+        // Mock provider for testing
         private class MockProvider : IExchangeRateProvider
         {
             public List<ExchangeRate> LatestRates { get; } =

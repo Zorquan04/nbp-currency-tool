@@ -3,7 +3,7 @@ using NbpCurrencyTool.Core.Models;
 
 namespace NbpCurrencyTool.Core.Utils
 {
-    // Iterator: umożliwia iterowanie po dostępnych walutach
+    // Iterator: allows you to iterate through the available currencies
     public class CurrencyCollection(IEnumerable<ExchangeRate>? rates) : IEnumerable<ExchangeRate>
     {
         private readonly List<ExchangeRate> _rates = rates?.ToList() ?? new List<ExchangeRate>();

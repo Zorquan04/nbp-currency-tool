@@ -30,3 +30,19 @@ C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\ob
 C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\refint\NbpCurrencyTool.Infrastructure.dll
 C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.pdb
 C:\Users\kacpe\RiderProjects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\ref\NbpCurrencyTool.Infrastructure.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\bin\Debug\net9.0\NbpCurrencyTool.Infrastructure.deps.json
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\bin\Debug\net9.0\NbpCurrencyTool.Infrastructure.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\bin\Debug\net9.0\NbpCurrencyTool.Infrastructure.pdb
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\bin\Debug\net9.0\NbpCurrencyTool.Core.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\bin\Debug\net9.0\NbpCurrencyTool.Core.pdb
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.csproj.AssemblyReference.cache
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.AssemblyInfoInputs.cache
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.AssemblyInfo.cs
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.csproj.CoreCompileInputs.cache
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.sourcelink.json
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurre.148A9CCE.Up2Date
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\refint\NbpCurrencyTool.Infrastructure.dll
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\NbpCurrencyTool.Infrastructure.pdb
+D:\VS 2022\Projects\nbp-currency-tool\NbpCurrencyTool.Infrastructure\obj\Debug\net9.0\ref\NbpCurrencyTool.Infrastructure.dll

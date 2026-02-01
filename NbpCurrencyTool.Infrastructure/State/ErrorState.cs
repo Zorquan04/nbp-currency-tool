@@ -6,9 +6,8 @@ namespace NbpCurrencyTool.Infrastructure.State
     {
         public Task EnterAsync()
         {
-            Console.WriteLine("[State] Błąd: " + ex.Message);
+            Console.WriteLine("[State] Error: " + ex.Message);
             return Task.CompletedTask;
         }
     }
-
 }
